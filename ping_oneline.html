@@ -27,9 +27,9 @@
                   <span class="value"
                     v-bind:class="e | checkLoss">{{ ("      " + String(e.loss.toFixed(0))).substr(-3).replace(/ /g,"&ensp;") }}
                     %&ensp;</span>
-                  <span class="header">Delay: </span>
+                  <span class="header">Ping: </span>
                   <span class="value"
-                    v-bind:class="e | checkDelay">{{ ("      " + String(e.rtt.toFixed(1))).substr(-5).replace(/ /g,"&ensp;") }}
+                    v-bind:class="e | checkPing">{{ ("      " + String(e.rtt.toFixed(1))).substr(-5).replace(/ /g,"&ensp;") }}
                     ms&ensp;</span>
                   <span class="header">Jitter: </span>
                   <span class="value"
